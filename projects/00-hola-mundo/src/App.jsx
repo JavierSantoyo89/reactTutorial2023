@@ -1,4 +1,5 @@
 import TwitterFollowCard from "./assets/TwitterFollowCard.jsx"
+// import RickAndMorty from "./assets/rickAndMorty.jsx"
 import "./assets/App.css"
 import Pruebas from "./assets/Pruebas.jsx"
 //import { useState } from "react"
@@ -35,6 +36,8 @@ function App() {
       })}
 
       <Pruebas name="Javier" />
+      {/* <RickAndMorty /> */}
+
       <button> Cambio de nombre</button>
     </section>
   )
