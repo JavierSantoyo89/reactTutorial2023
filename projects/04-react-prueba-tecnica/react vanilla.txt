@@ -1,0 +1,31 @@
+pnpm create vite@latest
+pnpm add @vitejs/plugin-react -E
+pnpm add react react-dom
+
+crea archivo "vite.config.js" en la rais e ingresa lo sig
+------------------------------
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+------------------------------
+editar archivo "main.js"
+-----------------------------
+import { createRoot } from 'react-dom/client'
+const root = createRoot(document.getElementById('app'))
+root.render(<h1>/Hola a todos!!!</h1>)
+
+cambia extencion de "main.js" a "main.jsx"
+actualiza nombre de main.js a main.jsx en Index.htmld
+-----------------------------
+instalar el linter
+----------------------------
+pnpm add standard -D
+agregar esto al package
+,
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
